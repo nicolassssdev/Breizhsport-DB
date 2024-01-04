@@ -54,7 +54,7 @@ CREATE TABLE `utilisateur` (
   `username` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `hash_password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `isConfirmed` tinyint(1) NOT NULL,
+  `is_confirmed` tinyint(1) NOT NULL,
   `picture_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `role` int DEFAULT NULL,
   PRIMARY KEY (`user_id`)
@@ -79,4 +79,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-03 14:36:35
+-- Dump completed on 2024-01-04 10:22:56
