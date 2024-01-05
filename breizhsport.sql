@@ -16,13 +16,13 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `produit`
+-- Table structure for table `Produits`
 --
 
-DROP TABLE IF EXISTS `produit`;
+DROP TABLE IF EXISTS `Produits`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `produit` (
+CREATE TABLE `Produits` (
   `produit_id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -34,22 +34,22 @@ CREATE TABLE `produit` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `produit`
+-- Dumping data for table `Produits`
 --
 
-LOCK TABLES `produit` WRITE;
-/*!40000 ALTER TABLE `produit` DISABLE KEYS */;
-/*!40000 ALTER TABLE `produit` ENABLE KEYS */;
+LOCK TABLES `Produits` WRITE;
+/*!40000 ALTER TABLE `Produits` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Produits` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `utilisateur`
+-- Table structure for table `Utilisateurs`
 --
 
-DROP TABLE IF EXISTS `utilisateur`;
+DROP TABLE IF EXISTS `Utilisateurs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `utilisateur` (
+CREATE TABLE `Utilisateurs` (
   `user_id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `hash_password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -62,12 +62,12 @@ CREATE TABLE `utilisateur` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `utilisateur`
+-- Dumping data for table `Utilisateurs`
 --
 
-LOCK TABLES `utilisateur` WRITE;
-/*!40000 ALTER TABLE `utilisateur` DISABLE KEYS */;
-/*!40000 ALTER TABLE `utilisateur` ENABLE KEYS */;
+LOCK TABLES `Utilisateurs` WRITE;
+/*!40000 ALTER TABLE `Utilisateurs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Utilisateurs` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -79,4 +79,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-04 10:22:56
+-- Dump completed on 2024-01-05  9:41:42
